@@ -1,0 +1,18 @@
+.h-card{
+    width: 18rem;
+    height : 18rem;
+    margin: 2rem 0 0 2rem;
+    padding-top: 25px;
+    border: 2px;
+    border-style: solid;
+    border-radius: 10%;
+    border-color: #fff;
+    background-color: #4c5976;
+}
+
+.h-img{
+    width: 9rem;
+    height: 9rem;
+    border-radius: 10%;
+    margin: 0 auto;
+}
