@@ -31,7 +31,7 @@ function App() {
       <SearchBox onChangeSearch={onChangeSearch} />
       <div className="row">
         {
-          searched.map((item) => <CardList className='col-md-3' key={item.id} user={item} />)
+          searched.map((item) => <CardList className='col-sm-12 col-md-6 col-lg-3' key={item.id} user={item} />)
         }
       </div>
     </div>
