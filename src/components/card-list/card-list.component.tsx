@@ -1,11 +1,15 @@
-import { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './card-list.style.css';
 
-function User(props) {
-  const [user] = useState(props.user)
+import { User } from '../../App';
+type TypeProps = {
+  user: User;
+  className: string;
+}
+
+function UserCard({ user , className } : TypeProps) {
   return (
-    <div className={props.className}>
+    <div className={className}>
       <div className='h-card'>
         <div className='h-card-body'>
           <img className='h-img' src={`https://robohash.org/${user.id}`} alt={`user ${user.name}`}  />
@@ -17,4 +21,4 @@ function User(props) {
     </div>
   )
 }
-export default User
+export default UserCard
